@@ -1,0 +1,65 @@
+body {
+  font-family: lato;
+}
+
+.jumbotron {
+  background-color: #2a333b;
+  color: #fcfcfc;
+  margin-top: 60px;
+}
+.jumbotron .btn {
+  background-color: #f16540;
+  border: #f16540;
+}
+.jumbotron .btn:hover {
+  background-color: #bd330e;
+  border: #bd330e;
+}
+.jumbotron h3 {
+  color: #fcfcfc;
+}
+.jumbotron h3 a {
+  color: #fcfcfc;
+  text-decoration: none;
+}
+.jumbotron h3 a:hover {
+  text-decoration: underline;
+}
+
+.contact {
+  background-color: #2a333b;
+  color: #fcfcfc;
+}
+.contact a {
+  color: #fcfcfc;
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+.contact .glyphicon {
+  font-size: 100px;
+}
+
+.slideanim {
+  visibility: hidden;
+}
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+.thumbnail {
+  min-height: 250px;
+}
+.thumbnail h3 {
+  height: 50px;
+}
+.thumbnail p {
+  height: 100px;
+  vertical: center;
+}

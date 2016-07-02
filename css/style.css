@@ -1,0 +1,215 @@
+/* line 8, ../sass/style.sass */
+body {
+  font-family: lato;
+}
+
+/* line 11, ../sass/style.sass */
+.jumbotron {
+  background-color: #2a333b;
+  color: #fcfcfc;
+  margin-top: 60px;
+  height: 500px;
+}
+/* line 16, ../sass/style.sass */
+.jumbotron .btn {
+  background-color: #f16540;
+  border: #f16540;
+}
+/* line 19, ../sass/style.sass */
+.jumbotron .btn:hover {
+  background-color: #bd330e;
+  border: #bd330e;
+}
+/* line 22, ../sass/style.sass */
+.jumbotron h5 {
+  color: #fcfcfc;
+}
+/* line 24, ../sass/style.sass */
+.jumbotron h5 a {
+  color: #fcfcfc;
+  text-decoration: none;
+}
+/* line 27, ../sass/style.sass */
+.jumbotron h5 a:hover {
+  text-decoration: underline;
+}
+
+/* line 30, ../sass/style.sass */
+.about-section h1 {
+  margin-bottom: 15px;
+  color: #2a333b;
+}
+/* line 33, ../sass/style.sass */
+.about-section img {
+  margin: 0 auto;
+}
+
+/* line 35, ../sass/style.sass */
+.about-height {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 37, ../sass/style.sass */
+.portfolio-height {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 39, ../sass/style.sass */
+.contact {
+  background-color: #2a333b;
+  color: #fcfcfc;
+  border-radius: 0.5%;
+  margin-top: 20px;
+  padding: 30px;
+}
+/* line 45, ../sass/style.sass */
+.contact span {
+  margin: 10px;
+}
+/* line 47, ../sass/style.sass */
+.contact a {
+  color: #fcfcfc;
+  text-decoration: none;
+}
+/* line 50, ../sass/style.sass */
+.contact a:hover {
+  text-decoration: underline;
+}
+/* line 52, ../sass/style.sass */
+.contact .glyphicon {
+  font-size: 75px;
+  margin-bottom: 30px;
+}
+
+/* line 55, ../sass/style.sass */
+.slideanim {
+  visibility: hidden;
+}
+
+/* line 57, ../sass/style.sass */
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+/* line 63, ../sass/style.sass */
+.affix {
+  top: 50px;
+}
+
+@media (max-width: 768px) {
+  /* line 66, ../sass/style.sass */
+  .affix {
+    position: static;
+  }
+}
+/* line 68, ../sass/style.sass */
+.affix-bottom {
+  position: absolute;
+}
+
+/* line 70, ../sass/style.sass */
+.portfolio-section {
+  background-color: #556878;
+  border-radius: 0.5%;
+  padding-right: 0px;
+}
+/* line 74, ../sass/style.sass */
+.portfolio-section h1 {
+  margin-bottom: 15px;
+  color: #fcfcfc;
+  font-weight: 400;
+}
+/* line 78, ../sass/style.sass */
+.portfolio-section .portfolio-holder {
+  background-color: #2a333b;
+  border-radius: 0.5%;
+  padding: 5px;
+}
+/* line 82, ../sass/style.sass */
+.portfolio-section .portfolio-holder .thumbnail {
+  position: relative;
+  margin: 10px;
+}
+/* line 85, ../sass/style.sass */
+.portfolio-section .portfolio-holder .thumbnail .title {
+  -webkit-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+  background-color: #2a333b;
+  opacity: 0.7;
+  color: #FFFFFF;
+  width: 100%;
+  border-radius: 1%;
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+/* line 97, ../sass/style.sass */
+.portfolio-section .portfolio-holder .thumbnail .title h3 {
+  opacity: 1;
+}
+/* line 99, ../sass/style.sass */
+.portfolio-section .portfolio-holder .thumbnail .title p {
+  opacity: 1;
+}
+/* line 101, ../sass/style.sass */
+.portfolio-section .portfolio-holder .thumbnail img {
+  -webkit-transition: filter 0.1s linear;
+  transition: -webkit-filter 0.1s linear;
+  -webkit-filter: blur(7px);
+  filter: blur(5px);
+}
+/* line 106, ../sass/style.sass */
+.portfolio-section .portfolio-holder .thumbnail:hover {
+  cursor: pointer;
+}
+/* line 108, ../sass/style.sass */
+.portfolio-section .portfolio-holder .thumbnail:hover .title {
+  opacity: 1;
+}
+/* line 110, ../sass/style.sass */
+.portfolio-section .portfolio-holder .thumbnail:hover img {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+}
+
+/* line 113, ../sass/style.sass */
+.slideanim {
+  visibility: hidden;
+}
+
+/* line 115, ../sass/style.sass */
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}

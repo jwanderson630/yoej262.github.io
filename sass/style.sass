@@ -1,0 +1,138 @@
+$main-color: #2a333b
+$light-main-color: #556878
+$standout-color: #f16540
+$white-color: #fcfcfc
+@mixin remove-spacing
+  margin: 0px
+  padding: 0px
+body
+  font-family: lato
+
+.jumbotron
+  background-color: $main-color
+  color: $white-color
+  margin-top: 60px
+  height: 500px 
+  .btn
+    background-color: $standout-color
+    border: $standout-color
+    &:hover
+      background-color: darken($standout-color,20%)
+      border: darken($standout-color,20%)
+  h5
+    color: $white-color
+    a
+      color: $white-color
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+.about-section
+  h1
+    margin-bottom: 15px
+    color: $main-color
+  img
+    margin: 0 auto   
+.about-height
+  @include remove-spacing
+.portfolio-height
+  @include remove-spacing
+.contact
+  background-color: $main-color
+  color: $white-color
+  border-radius: .5%
+  margin-top: 20px
+  padding: 30px
+  span
+    margin: 10px
+  a
+    color: $white-color
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  .glyphicon
+    font-size: 75px
+    margin-bottom: 30px
+.slideanim
+  visibility: hidden
+.slide
+  animation-name: slide
+  -webkit-animation-name: slide
+  animation-duration: 1s
+  -webkit-animation-duration: 1s
+  visibility: visible
+.affix
+  top: 50px
+@media (max-width: 768px)
+  .affix
+    position: static
+.affix-bottom 
+  position: absolute
+.portfolio-section
+  background-color: $light-main-color
+  border-radius: .5%
+  padding-right: 0px
+  h1
+    margin-bottom: 15px
+    color: $white-color
+    font-weight: 400
+  .portfolio-holder
+    background-color: $main-color
+    border-radius: .5%
+    padding: 5px
+    .thumbnail
+      position: relative
+      margin: 10px
+      .title
+        -webkit-transition: opacity .1s linear
+        transition: opacity .1s linear
+        background-color: $main-color
+        opacity: .7
+        color: #FFFFFF
+        width: 100%
+        border-radius: 1%
+        position: absolute
+        padding: 0
+        top: 0
+        left: 0
+        h3
+          opacity: 1
+        p
+          opacity: 1
+      img
+        -webkit-transition: filter .1s linear
+        transition: -webkit-filter .1s linear
+        -webkit-filter: blur(7px)
+        filter: blur(5px)
+      &:hover
+        cursor: pointer
+        .title
+          opacity: 1
+        img
+          -webkit-filter: blur(0px)
+          filter: blur(0px)
+.slideanim 
+  visibility: hidden
+.slide
+  animation-name: slide
+  -webkit-animation-name: slide
+  animation-duration: 1s
+  -webkit-animation-duration: 1s
+  visibility: visible
+
+@keyframes slide 
+  0% 
+    opacity: 0
+    -webkit-transform: translateY(70%)
+  
+  100% 
+    opacity: 1
+    -webkit-transform: translateY(0%)
+
+@-webkit-keyframes slide 
+  0% 
+    opacity: 0
+    -webkit-transform: translateY(70%)
+
+  100%
+    opacity: 1
+    -webkit-transform: translateY(0%)
