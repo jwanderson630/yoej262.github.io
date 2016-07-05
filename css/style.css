@@ -34,29 +34,38 @@ body {
   text-decoration: underline;
 }
 
-/* line 30, ../sass/style.sass */
+/* line 29, ../sass/style.sass */
+.about-section {
+  height: 400px;
+}
+/* line 31, ../sass/style.sass */
 .about-section h1 {
   margin-bottom: 15px;
   color: #2a333b;
 }
-/* line 33, ../sass/style.sass */
+/* line 34, ../sass/style.sass */
 .about-section img {
   margin: 0 auto;
 }
 
-/* line 35, ../sass/style.sass */
+/* line 36, ../sass/style.sass */
+.about-content {
+  margin-top: 100px;
+}
+
+/* line 38, ../sass/style.sass */
 .about-height {
   margin: 0px;
   padding: 0px;
 }
 
-/* line 37, ../sass/style.sass */
+/* line 40, ../sass/style.sass */
 .portfolio-height {
   margin: 0px;
   padding: 0px;
 }
 
-/* line 39, ../sass/style.sass */
+/* line 42, ../sass/style.sass */
 .contact {
   background-color: #2a333b;
   color: #fcfcfc;
@@ -64,31 +73,31 @@ body {
   margin-top: 20px;
   padding: 30px;
 }
-/* line 45, ../sass/style.sass */
+/* line 48, ../sass/style.sass */
 .contact span {
   margin: 10px;
 }
-/* line 47, ../sass/style.sass */
+/* line 50, ../sass/style.sass */
 .contact a {
   color: #fcfcfc;
   text-decoration: none;
 }
-/* line 50, ../sass/style.sass */
+/* line 53, ../sass/style.sass */
 .contact a:hover {
   text-decoration: underline;
 }
-/* line 52, ../sass/style.sass */
+/* line 55, ../sass/style.sass */
 .contact .glyphicon {
   font-size: 75px;
   margin-bottom: 30px;
 }
 
-/* line 55, ../sass/style.sass */
+/* line 58, ../sass/style.sass */
 .slideanim {
   visibility: hidden;
 }
 
-/* line 57, ../sass/style.sass */
+/* line 60, ../sass/style.sass */
 .slide {
   animation-name: slide;
   -webkit-animation-name: slide;
@@ -97,46 +106,46 @@ body {
   visibility: visible;
 }
 
-/* line 63, ../sass/style.sass */
+/* line 66, ../sass/style.sass */
 .affix {
   top: 50px;
 }
 
 @media (max-width: 768px) {
-  /* line 66, ../sass/style.sass */
+  /* line 69, ../sass/style.sass */
   .affix {
     position: static;
   }
 }
-/* line 68, ../sass/style.sass */
+/* line 71, ../sass/style.sass */
 .affix-bottom {
   position: absolute;
 }
 
-/* line 70, ../sass/style.sass */
+/* line 73, ../sass/style.sass */
 .portfolio-section {
   background-color: #556878;
   border-radius: 0.5%;
   padding-right: 0px;
 }
-/* line 74, ../sass/style.sass */
+/* line 77, ../sass/style.sass */
 .portfolio-section h1 {
   margin-bottom: 15px;
   color: #fcfcfc;
   font-weight: 400;
 }
-/* line 78, ../sass/style.sass */
+/* line 81, ../sass/style.sass */
 .portfolio-section .portfolio-holder {
   background-color: #2a333b;
   border-radius: 0.5%;
   padding: 5px;
 }
-/* line 82, ../sass/style.sass */
+/* line 85, ../sass/style.sass */
 .portfolio-section .portfolio-holder .thumbnail {
   position: relative;
   margin: 10px;
 }
-/* line 85, ../sass/style.sass */
+/* line 88, ../sass/style.sass */
 .portfolio-section .portfolio-holder .thumbnail .title {
   -webkit-transition: opacity 0.1s linear;
   transition: opacity 0.1s linear;
@@ -150,41 +159,41 @@ body {
   top: 0;
   left: 0;
 }
-/* line 97, ../sass/style.sass */
+/* line 100, ../sass/style.sass */
 .portfolio-section .portfolio-holder .thumbnail .title h3 {
   opacity: 1;
 }
-/* line 99, ../sass/style.sass */
+/* line 102, ../sass/style.sass */
 .portfolio-section .portfolio-holder .thumbnail .title p {
   opacity: 1;
 }
-/* line 101, ../sass/style.sass */
+/* line 104, ../sass/style.sass */
 .portfolio-section .portfolio-holder .thumbnail img {
   -webkit-transition: filter 0.1s linear;
   transition: -webkit-filter 0.1s linear;
   -webkit-filter: blur(7px);
   filter: blur(5px);
 }
-/* line 106, ../sass/style.sass */
+/* line 109, ../sass/style.sass */
 .portfolio-section .portfolio-holder .thumbnail:hover {
   cursor: pointer;
 }
-/* line 108, ../sass/style.sass */
+/* line 111, ../sass/style.sass */
 .portfolio-section .portfolio-holder .thumbnail:hover .title {
   opacity: 1;
 }
-/* line 110, ../sass/style.sass */
+/* line 113, ../sass/style.sass */
 .portfolio-section .portfolio-holder .thumbnail:hover img {
   -webkit-filter: blur(0px);
   filter: blur(0px);
 }
 
-/* line 113, ../sass/style.sass */
+/* line 116, ../sass/style.sass */
 .slideanim {
   visibility: hidden;
 }
 
-/* line 115, ../sass/style.sass */
+/* line 118, ../sass/style.sass */
 .slide {
   animation-name: slide;
   -webkit-animation-name: slide;
